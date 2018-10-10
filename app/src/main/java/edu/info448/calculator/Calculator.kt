@@ -6,7 +6,7 @@ package edu.info448.calculator
 class Calculator {
 
     // Stored number
-    private var value: Double = 0.toDouble()
+    private var value: Double = 0.0
 
     // Available operations
     enum class Operator {
@@ -49,7 +49,7 @@ class Calculator {
      * Multiply operation
      */
     fun mul(operand: Double): Double {
-        value /= operand
+        value *= operand
         return value
     }
 }

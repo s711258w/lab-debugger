@@ -67,7 +67,7 @@ class MainActivity : Activity() {
         val result: String
         when (operator) {
             Calculator.Operator.ADD -> result = mCalculator!!.add(operand).toString()
-            Calculator.Operator.SUB -> result = getString(R.string.computationError)
+            Calculator.Operator.SUB -> result = mCalculator!!.sub(operand).toString()
             Calculator.Operator.DIV -> result = mCalculator!!.div(operand).toString()
             Calculator.Operator.MUL -> result = mCalculator!!.mul(operand).toString()
             else -> result = getString(R.string.computationError)
